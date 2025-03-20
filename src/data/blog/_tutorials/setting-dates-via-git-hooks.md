@@ -1,7 +1,7 @@
 ---
 author: Simon Smale
 pubDatetime: 2025-03-20T21:57:45Z
-modDatetime: 2024-01-08T18:59:05Z
+modDatetime: 2025-03-20T21:58:35Z
 title: How to use Git Hooks to set Created and Modified Dates
 featured: false
 draft: false
@@ -189,3 +189,5 @@ interface DatetimesProps {
   modDatetime: string | Date | undefined | null;
 }
 ```
+
+test diff
