@@ -5,7 +5,7 @@ pubDatetime: 2025-03-20T21:57:45Z
 slug: how-to-update-dependencies
 featured: false
 draft: false
-ogImage: ../../assets/images/forrest-gump-quote.png
+ogImage: ../../../assets/images/forrest-gump-quote.png
 tags:
   - FAQ
 description: How to update project dependencies and AstroPaper template.
