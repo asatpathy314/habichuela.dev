@@ -3,6 +3,7 @@ author: Alberto Perdomo
 pubDatetime: 2025-03-20T21:57:45Z
 modDatetime: 2025-03-09T09:24:07.841Z
 title: How to add LaTeX Equations in Astro blog posts
+draft: true
 tags:
   - docs
 description: Learn how to add LaTeX equations in Astro blog posts using Markdown, KaTeX, and remark/rehype plugins.

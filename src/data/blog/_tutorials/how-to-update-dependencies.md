@@ -4,7 +4,7 @@ author: Sat Naing
 pubDatetime: 2025-03-20T21:57:45Z
 slug: how-to-update-dependencies
 featured: false
-draft: false
+draft: true
 ogImage: ../../../assets/images/forrest-gump-quote.png
 tags:
   - FAQ

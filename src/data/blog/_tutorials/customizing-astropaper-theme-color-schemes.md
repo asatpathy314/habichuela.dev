@@ -3,7 +3,7 @@ author: Sat Naing
 pubDatetime: 2025-03-20T21:57:45Z
 title: Customizing AstroPaper theme color schemes
 featured: false
-draft: false
+draft: true
 tags:
   - color-schemes
   - docs
@@ -18,7 +18,7 @@ This post will explain how you can enable/disable light & dark mode for the webs
 
 ## Enable/disable light & dark mode
 
-AstroPaper theme will include light and dark mode by default. In other words, there will be two color schemes\_ one for light mode and another for dark mode. This default behavior can be disabled in SITE configuration object of the `src/config.ts` file.
+AstroPaper theme will include light and dark mode by default. In other words, there will be two color schemes one for light mode and another for dark mode. This default behavior can be disabled in SITE configuration object of the `src/config.ts` file.
 
 ```js
 // file: src/config.ts
