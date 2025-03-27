@@ -2,6 +2,7 @@
 title: picoCTF 2025 - echo-valley and handoff
 author: Abhishek Satpathy
 pubDatetime: 2025-03-21T23:35:23Z
+modDatetime: 2025-03-27T05:24:55Z
 slug: picoctf-2025-pwn
 featured: false
 draft: false
