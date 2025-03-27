@@ -1,8 +1,8 @@
 ---
 title: C2C 2025 Qualifiers - pwn'ed
 author: Abhishek Satpathy
-pubDatetime: 2025-03-21T23:35:23Z
-modDatetime: 2025-03-27T05:24:55Z
+pubDatetime: 2025-02-20T02:35:23Z
+modDatetime: 2025-03-27T05:26:57Z
 slug: c2c-ctf-quals-pwned
 featured: false
 draft: false
