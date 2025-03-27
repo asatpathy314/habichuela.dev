@@ -20,7 +20,7 @@ description: A writeup on a simple rev/crypto challenge at Kernel Kombat CTF
 This problem was placed in the `rev` category, although arguably it might've fit better
 in `crypto`. The challenge description was the following:
 
-![description](@assets/images/ctf/kkctf-padding.png))
+![description](@/assets/images/ctf/kkctf-padding.png))
 
 The `chall.c` file that came with the challenge had the following content:
 

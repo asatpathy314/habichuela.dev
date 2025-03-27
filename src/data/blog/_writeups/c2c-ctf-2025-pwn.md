@@ -308,7 +308,7 @@ bool move_husky(char *param_1)
 
 The general set-up seems to be we need to enter the full maze sequence in one input, and the maze is hard-coded in memory. Taking a look at the maze in memory after retyping the variable in Ghidra as `int[4][4]` gives us the following image.
 
-![ghidradecompilation](@assets/images/ctf/c2cctf-ghidra.png)
+![ghidradecompilation](@/assets/images/ctf/c2cctf-ghidra.png)
 
 From there it's clear the instruction set is `242424`. Using that we get the flag.
 

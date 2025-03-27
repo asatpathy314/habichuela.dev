@@ -166,7 +166,7 @@ io.interactive()
 
 Running this script and examining memory with lldb, we discover that the offset between the start of buffer and the return address is 264 bytes.
 
-![offsets](@assets/images/ctf/c2cctf-ghidra.png))
+![offsets](@/assets/images/ctf/c2cctf-ghidra.png))
 
 Now that we have our offsets, our memory leak, and we've identified our stack smashing vulnerability we're ready to perform our `ret2win` attack.
 
