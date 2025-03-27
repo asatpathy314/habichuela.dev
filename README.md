@@ -61,7 +61,7 @@ pnpm run dev
 ```
 
 ## Google Site Verification (optional)
-
+<meta name="google-site-verification" content="2wPFH4hB-dfz-5xw2vN2Sk4JKgN4UOKdcbeIkuDLfWQ" />
 You can easily add your [Google Site Verification HTML tag](https://support.google.com/webmasters/answer/9008080#meta_tag_verification&zippy=%2Chtml-tag) in AstroPaper using an environment variable. This step is optional. If you don't add the following environment variable, the google-site-verification tag won't appear in the HTML `<head>` section.
 
 ```bash

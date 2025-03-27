@@ -3,7 +3,7 @@ export const SITE = {
   author: "Abhishek Satpathy",
   profile: "https://github.com/asatpathy314",
   desc: "CTF writeups.",
-  title: "l33thax0r33",
+  title: "habichuela.dev",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
   postPerIndex: 4,
