@@ -14,7 +14,7 @@ export const SITE = {
   editPost: {
     enabled: true,
     text: "Suggest Changes",
-    url: "https://github.com/asatpathy314/ctf-writeups-ion/",
+    url: "https://github.com/asatpathy314/ctf-writeups-ion/tree/main/",
   },
   dynamicOgImage: true,
 } as const;
