@@ -11,14 +11,14 @@ jobs:
     name: Deploy
     environment: Cloudflare
     steps:
+      - name: Set runner timezone
       - uses: szenius/set-timezone@v2.0
-      - with:
+        with:
           timezoneLinux: "America/New_York"
           timezoneMacos: "America/New_York"
           timezoneWindows: "Eastern Standard Time"
-
-      - uses: actions/checkout@v4
       - name: Install dependencies
+      - uses: actions/checkout@v4
         run: npm install
 
       - name: Build static files
