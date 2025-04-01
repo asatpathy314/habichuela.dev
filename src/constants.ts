@@ -6,6 +6,7 @@ import IconWhatsapp from "@/assets/icons/IconWhatsapp.svg";
 import IconFacebook from "@/assets/icons/IconFacebook.svg";
 import IconTelegram from "@/assets/icons/IconTelegram.svg";
 import IconPinterest from "@/assets/icons/IconPinterest.svg";
+import IconResume from "@/assets/icons/IconResume.svg";
 import { SITE } from "@/config";
 
 export const LOCALE = {
@@ -25,6 +26,12 @@ export const SOCIALS = [
     href: "https://www.linkedin.com/in/abhishek-satpathy-1b2b84270/",
     linkTitle: `${SITE.title} on LinkedIn`,
     icon: IconLinkedin,
+  },
+  {
+    name: "Resume",
+    href: `${SITE.website}resume.pdf`,
+    linkTitle: `Resume on ${SITE.title}`,
+    icon: IconResume
   }
 ] as const;
 
