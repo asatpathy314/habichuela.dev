@@ -2,7 +2,7 @@
 title: Diff Sentry and HooHacks 2025
 author: Abhishek Satpathy
 pubDatetime: 2025-04-02T03:10:11Z
-modDatetime: 
+modDatetime: 2025-04-02T03:14:53Z
 slug: diff-sentry-hoohacks
 featured: false
 draft: false
@@ -19,7 +19,7 @@ description: A reflection on losing at HooHacks 2025
 For context, this past weekend three of my wonderful friends and I decided to take 36 hours out of our lives to build something cool. We struggled to land on a decent idea, but eventually settled on a code vulnerability scanner. After researching potential markets and considering [the state of open source software security](https://4008838.fs1.hubspotusercontent-na1.net/hubfs/4008838/2024-tidelift-state-of-the-open-source-maintainer-report.pdf), we committed to building an open source tool for open source maintainers.
 
 ## Project  
-![OpenGraph preview image for the project](@/assets/images/og.png):  
+![OpenGraph preview image for the project](@/assets/images/og.png)
 - Backend: FastAPI  
 - Frontend: React.js + Tailwind CSS  
 - CI/CD: GitHub Actions  
