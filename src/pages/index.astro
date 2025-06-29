@@ -8,8 +8,8 @@ import LinkButton from "@/components/LinkButton.astro";
 import Card from "@/components/Card.astro";
 import Hr from "@/components/Hr.astro";
 import getSortedPosts from "@/utils/getSortedPosts";
-import IconRss from "@/assets/icons/IconRss.svg";
-import IconArrowRight from "@/assets/icons/IconArrowRight.svg";
+import IconRss from "@/assets/icons/IconRss.svg?component";
+import IconArrowRight from "@/assets/icons/IconArrowRight.svg?component";
 import { SITE } from "@/config";
 import { SOCIALS } from "@/constants";
 
@@ -43,7 +43,8 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
       </a>
 
       <p>
-        A minimal blog to post my thoughts on software development, life, and capture the flag competitions.
+        A minimal blog to post my thoughts on software development, life, and
+        capture the flag competitions.
       </p>
       <p class="mt-2">
         Read the blog posts or check the

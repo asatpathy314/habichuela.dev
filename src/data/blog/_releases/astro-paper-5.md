@@ -64,7 +64,7 @@ The import alias has been updated from `@directory` to `@/directory`, which mean
 ```astro
 ---
 import { slugifyStr } from "@/utils/slugify";
-import IconHash from "@/assets/icons/IconHash.svg";
+import IconHash from "@/assets/icons/IconHash.svg?component";
 ---
 ```
 

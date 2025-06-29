@@ -1,12 +1,12 @@
-import IconMail from "@/assets/icons/IconMail.svg";
-import IconGitHub from "@/assets/icons/IconGitHub.svg";
-import IconBrandX from "@/assets/icons/IconBrandX.svg";
-import IconLinkedin from "@/assets/icons/IconLinkedin.svg";
-import IconWhatsapp from "@/assets/icons/IconWhatsapp.svg";
-import IconFacebook from "@/assets/icons/IconFacebook.svg";
-import IconTelegram from "@/assets/icons/IconTelegram.svg";
-import IconPinterest from "@/assets/icons/IconPinterest.svg";
-import IconResume from "@/assets/icons/IconResume.svg";
+import IconMail from "@/assets/icons/IconMail.svg?component";
+import IconGitHub from "@/assets/icons/IconGitHub.svg?component";
+import IconBrandX from "@/assets/icons/IconBrandX.svg?component";
+import IconLinkedin from "@/assets/icons/IconLinkedin.svg?component";
+import IconWhatsapp from "@/assets/icons/IconWhatsapp.svg?component";
+import IconFacebook from "@/assets/icons/IconFacebook.svg?component";
+import IconTelegram from "@/assets/icons/IconTelegram.svg?component";
+import IconPinterest from "@/assets/icons/IconPinterest.svg?component";
+import IconResume from "@/assets/icons/IconResume.svg?component";
 import { SITE } from "@/config";
 
 export const LOCALE = {
@@ -31,8 +31,8 @@ export const SOCIALS = [
     name: "Resume",
     href: `${SITE.website}resume.pdf`,
     linkTitle: `Resume on ${SITE.title}`,
-    icon: IconResume
-  }
+    icon: IconResume,
+  },
 ] as const;
 
 export const SHARE_LINKS = [

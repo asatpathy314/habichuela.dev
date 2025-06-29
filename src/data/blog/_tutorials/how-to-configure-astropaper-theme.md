@@ -102,7 +102,7 @@ You might want to use this option if you want to use an SVG logo.
   ```astro
   ---
   // other imports
-  import DummyLogo from "@/assets/dummy-logo.svg";
+  import DummyLogo from "@/assets/dummy-logo.svg?component";
   ---
   ```
 
