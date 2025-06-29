@@ -8,9 +8,7 @@ import { SITE } from "./src/config";
 // https://astro.build/config
 export default defineConfig({
   site: SITE.website,
-  integrations: [
-    sitemap(),
-  ],
+  integrations: [sitemap()],
   markdown: {
     remarkPlugins: [remarkToc, [remarkCollapse, { test: "Table of contents" }]],
     shikiConfig: {
@@ -25,13 +23,8 @@ export default defineConfig({
       exclude: ["@resvg/resvg-js"],
     },
   },
-  experimental: {
-    responsiveImages: true,
-    svg: true,
-  },
   image: {
     // Used for all Markdown images; not configurable per-image
     // Used for all `<Image />` and `<Picture />` components unless overridden with a prop
-    experimentalLayout: "responsive",
   },
 });
