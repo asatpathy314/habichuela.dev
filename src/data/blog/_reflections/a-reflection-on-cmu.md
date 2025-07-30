@@ -3,7 +3,7 @@ title: A reflection on CMU REUSE
 author: Abhishek Satpathy
 pubDatetime: 2025-03-20T21:57:45Z
 modDatetime:
-slug: reflection-on-cmu
+slug: reflection-on-cmu-reuse
 featured: false
 draft: false
 tags:
