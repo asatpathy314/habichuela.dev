@@ -7,9 +7,9 @@ slug: reflection-on-cmu-reuse
 featured: false
 draft: false
 tags:
-  - Research
-  - Machine Learning
-  - Software Engineering
+  - research
+  - ml
+  - swe
 description: A short reflection on my experience in the undergraduate summer research program at Carnegie Mellon.
 ---
 
