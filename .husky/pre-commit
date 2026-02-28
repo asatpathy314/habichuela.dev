@@ -1,0 +1,29 @@
+# New blog posts: set pubDatetime if empty
+git diff --cached --name-status |
+grep -i '^A.*\.md$' |
+while read _ file; do
+  filecontent=$(cat "$file")
+  frontmatter=$(echo "$filecontent" | awk -v RS='---' 'NR==2{print}')
+  pubdate=$(echo "$frontmatter" | awk '/^pubDatetime: .+/{print $2}')
+  if [ -z "$pubdate" ]; then
+    echo "$file pubDatetime set"
+    sed "/---.*/,/---.*/s/^pubDatetime:.*$/pubDatetime: $(date -u "+%Y-%m-%dT%H:%M:%SZ")/" "$file" > tmp
+    mv tmp "$file"
+    git add "$file"
+  fi
+done
+
+# Modified blog posts: update modDatetime if not a draft
+git diff --cached --name-status |
+grep -i '^M.*\.md$' |
+while read _ file; do
+  filecontent=$(cat "$file")
+  frontmatter=$(echo "$filecontent" | awk -v RS='---' 'NR==2{print}')
+  draft=$(echo "$frontmatter" | awk '/^draft: /{print $2}')
+  if [ "$draft" = "false" ]; then
+    echo "$file modDatetime updated"
+    sed "/---.*/,/---.*/s/^modDatetime:.*$/modDatetime: $(date -u "+%Y-%m-%dT%H:%M:%SZ")/" "$file" > tmp
+    mv tmp "$file"
+    git add "$file"
+  fi
+done
