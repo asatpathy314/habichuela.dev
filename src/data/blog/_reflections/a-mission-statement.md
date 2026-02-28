@@ -1,8 +1,8 @@
 ---
 title: a mission statement of sorts
 author: Abhishek Satpathy
-pubDatetime:
-modDatetime:
+pubDatetime: 2026-02-27T00:00:00Z
+modDatetime: 2026-02-28T05:55:45Z
 slug: mission
 featured: false
 draft: false
