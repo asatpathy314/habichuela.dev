@@ -2,7 +2,7 @@ export const SITE = {
   website: "https://habichuela.pages.dev/", // replace this with your deployed domain
   author: "Abhishek Satpathy",
   profile: "https://github.com/asatpathy314",
-  desc: "CTF writeups.",
+  desc: "Writing about AI, mechanistic interpretability, and whatever else I find worth thinking about.",
   title: "habichuela.dev",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
