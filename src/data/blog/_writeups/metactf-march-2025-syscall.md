@@ -6,6 +6,8 @@ modDatetime:
 slug: metactf-march-2025-syscall
 featured: false
 draft: false
+archived: true
+skipModUpdate: true
 tags:
   - pwn
   - metactf

@@ -6,6 +6,8 @@ modDatetime: 2025-03-27T05:26:57Z
 slug: c2c-ctf-quals-pwned
 featured: false
 draft: false
+archived: true
+skipModUpdate: true
 tags:
   - pwn
   - c2c-quals

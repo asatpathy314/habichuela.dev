@@ -2,7 +2,7 @@
 title: Threat Modeling with LLMs
 author: Abhishek Satpathy
 pubDatetime: 2026-02-27T00:00:00Z
-modDatetime: 2026-03-05T06:28:17Z
+modDatetime: 2026-03-05T06:51:47Z
 slug: threat-modeling-with-llms
 featured: false
 draft: false
@@ -59,7 +59,7 @@ The first is methodological. This type of tool requires a developer study to be 
 
 The second reason is more fundamental: I think the problems this research tries to solve will be washed away by model scale.
 
-Richard Sutton's "The Bitter Lesson" (2019) observes that, historically, AI researchers have built domain-specific knowledge into their systems, and this always helps in the short term, but in the long run, general methods that leverage computation win by a large margin. The pattern has repeated across chess, Go, speech recognition, and computer vision. My research is a textbook example of the thing Sutton warns against: I spent a summer carefully engineering a context elicitation pipeline (a Question Generator, a Context Judge, structured decomposition into threat categories) to compensate for the model's inability to gather context on its own. This is exactly the kind of human-knowledge scaffolding that tends to get made obsolete by the next generation of models.
+Richard Sutton's "The Bitter Lesson" (2019) observes that, historically, AI researchers have built domain-specific knowledge into their systems, and this always helps in the short term, but in the long run, general methods that leverage computation win by a large margin. The pattern has repeated across chess, Go, speech recognition, and computer vision. My research is a textbook example of the thing Sutton warns against: I spent a summer carefully engineering a context elicitation pipeline (a Question Generator, a Context Judge, structured decomposition into threat categories) to compensate for the model's inability to gather context on its own. I realized, a while after, that this is the kind of human-knowledge scaffolding that Sutton points to in his writing.
 
 As models' capabilities improve, we should expect two things:
 
@@ -70,7 +70,7 @@ The second point has arguably already happened. Anthropic released Claude Code S
 
 More broadly, agentic coding tools like Claude Code can now navigate million-line codebases, execute commands, run tests, and manage entire implementation workflows autonomously. A coding agent pointed at a repository and told "threat model this system" can, in principle, answer its own context elicitation questions by reading the code, inspecting the architecture, and tracing data flows without any human interview process. I suspect a study today would find that this approach matches or exceeds what my carefully engineered pipeline produced last summer.
 
-This research is not "bitter-lesson pilled" enough. The scaffolding I built was useful at a fixed point in time, but the problems it solves are precisely the kind that scale tends to dissolve.
+Basically, this research is not "bitter-lesson pilled" enough. The scaffolding I built was useful at a fixed point in time, but the problems it solves are the kind that scale tends to dissolve. Whether you're a researcher, a startup founder, or an engineer, Boris Cherny's advice is prescient: "Don’t build for the model of today, build for the model 6 months from now."
 
 
 ## Other Interesting Findings

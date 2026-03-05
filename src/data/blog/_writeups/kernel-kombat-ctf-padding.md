@@ -6,6 +6,8 @@ modDatetime: 2025-03-27T05:26:57Z
 slug: kernel-kombat-ctf-padding
 featured: false
 draft: false
+archived: true
+skipModUpdate: true
 tags:
   - rev
   - crypto

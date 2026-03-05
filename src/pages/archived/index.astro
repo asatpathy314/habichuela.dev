@@ -1,0 +1,56 @@
+---
+import { getCollection } from "astro:content";
+import Main from "@/layouts/Main.astro";
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import Card from "@/components/Card.astro";
+import getPostsByGroupCondition from "@/utils/getPostsByGroupCondition";
+import { SITE } from "@/config";
+
+const posts = await getCollection(
+  "blog",
+  ({ data }) => !data.draft && data.archived
+);
+---
+
+<Layout title={`Archived | ${SITE.title}`}>
+  <Header />
+  <Main pageTitle="Archived" pageDesc="Posts that have been archived.">
+    <p class="mb-6">
+      These are older CTF writeups that I've archived. They represent work I did
+      earlier on, but no longer reflect my current focus or skill level. I'm
+      keeping them here for posterity.
+    </p>
+    {
+      Object.entries(
+        getPostsByGroupCondition(posts, post =>
+          post.data.pubDatetime.getFullYear()
+        )
+      )
+        .sort(([yearA], [yearB]) => Number(yearB) - Number(yearA))
+        .map(([year, yearGroup]) => (
+          <div>
+            <span class="text-2xl font-bold">{year}</span>
+            <sup class="text-sm">{yearGroup.length}</sup>
+            <ul>
+              {yearGroup
+                .sort(
+                  (a, b) =>
+                    Math.floor(
+                      new Date(b.data.pubDatetime).getTime() / 1000
+                    ) -
+                    Math.floor(
+                      new Date(a.data.pubDatetime).getTime() / 1000
+                    )
+                )
+                .map(data => (
+                  <Card {...data} />
+                ))}
+            </ul>
+          </div>
+        ))
+    }
+  </Main>
+  <Footer />
+</Layout>

@@ -20,7 +20,8 @@ while read _ file; do
   filecontent=$(cat "$file")
   frontmatter=$(echo "$filecontent" | awk -v RS='---' 'NR==2{print}')
   draft=$(echo "$frontmatter" | awk '/^draft: /{print $2}')
-  if [ "$draft" = "false" ]; then
+  skipmod=$(echo "$frontmatter" | awk '/^skipModUpdate: /{print $2}')
+  if [ "$draft" = "false" ] && [ "$skipmod" != "true" ]; then
     echo "$file modDatetime updated"
     sed "/---.*/,/---.*/s/^modDatetime:.*$/modDatetime: $(date -u "+%Y-%m-%dT%H:%M:%SZ")/" "$file" > tmp
     mv tmp "$file"
