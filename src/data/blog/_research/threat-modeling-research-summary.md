@@ -2,8 +2,8 @@
 title: Threat Modeling with LLMs
 author: Abhishek Satpathy
 pubDatetime: 2026-02-27T00:00:00Z
-modDatetime: 2026-02-28T05:55:45Z
-slug: mission
+modDatetime: 2026-03-05T06:28:17Z
+slug: threat-modeling-with-llms
 featured: false
 draft: false
 tags:
